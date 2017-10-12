@@ -1,0 +1,694 @@
+*{
+	font-family:'Open Sans', Helvetica, Calibri, Arial, sans-serif;
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*color pallette
+	#D7FFF1
+	#8CD790
+	#77AF9C
+	#285943
+*/
+
+html, body{
+	height:100%;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.01)
+}
+
+nav{
+	height:50px;
+	width:100%;
+	padding:0 140px;
+	position:fixed;
+	top:0;
+	background-color: #FFFFFF;
+	z-index: 2;
+	-webkit-box-shadow: 0px -1px 27px 4px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px -1px 27px 4px rgba(0,0,0,0.5);
+		box-shadow: 0px -1px 27px 4px rgba(0,0,0,0.5);
+	}
+	nav > a{
+		height:50px;
+		float:left;
+		padding:10px;
+		}
+		nav > a > img{
+			height:100%;
+		}
+	nav > ul{
+		list-style: none;
+		float:right;
+		position:relative;
+		}
+		nav > ul > li{
+			height:100%;
+			display:inline-block;
+			float:left;
+			}
+			nav > ul > li > a{
+				font-family: Prelo, 'Open Sans', Helvetica, Calibri, Arial, sans-serif;
+				padding:0 15px;
+				text-decoration: none;
+				color:#000000;
+				display:block;
+				height:100%;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				font-size: 12px;
+				font-weight:900;
+				line-height: 50px;
+				}
+				nav > ul > li > a:hover{
+					color:#77AF9C;
+					cursor: pointer;
+				}
+				nav > ul > li > a > img{
+					margin-top: 15px;
+					height:15px;
+				}
+#search-nav{
+	height:70px;
+	margin-top: 50px;
+	width:100%;
+	background-color: white;
+	display:none;
+	position:fixed;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	z-index: 3;
+	}
+	#search-nav > input[type="text"]{
+		height:100%;
+		border:none;
+		outline:none;
+		width:70%;
+		margin-left: 10%;
+		text-indent: 20px;
+		font-size: 16px;
+	}
+	#search-nav > input[type="submit"]{
+		height:100%;
+		margin-top: -2px;
+		padding:0 50px 0 15px;
+		border:none;
+		border-left: 1px solid rgba(0, 0, 0, 0.1);
+		background-color: rgba(0, 0, 0, 0);
+		color:rgba(0, 0, 0, 0.5);
+		outline:none;
+		}
+		#search-nav > input[type="submit"]:hover{
+			background-color: #285943;
+			color:white;
+			cursor:pointer;
+		}
+
+main{
+	min-height: 100%;
+	}
+	main > #cover{
+		background-repeat:no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+		background-color: rgba(0, 0, 0, 0.2);
+		height:100%;
+		position:relative;
+		text-align: center;
+		}
+		main > #cover > h1, main > #cover > div{
+			position:absolute;
+			top:45%;
+			left:50%;
+			transform:translate(-50%, -50%);
+			font-size: 73px;
+			font-family: 'Work Sans Light', Helvetica, Calibri, Arial, sans-serif;
+			font-weight: 200;
+			display:block;
+			color:white;
+			margin-bottom: 20px;
+			}
+			main > #cover > div > h1{
+				font-size: 73px;
+				font-family: 'Work Sans Light', Helvetica, Calibri, Arial, sans-serif;
+				font-weight: 200;
+				display:block;
+				color:white;
+				margin-bottom:20px;
+			}
+			main > #cover > div > h2{
+				font-size: 32px;
+				font-family: 'Work Sans Light', Helvetica, Calibri, Arial, sans-serif;
+				font-weight: 200;
+				display:block;
+				color:white;
+			}
+			main > #cover > article{
+				position:absolute;
+				position:absolute;
+				bottom:200px;
+				left:50%;
+				transform:translateX(-50%);
+				display:inline;
+				font-family: 'Work Sans', Helvetica, Calibri, Arial, sans-serif;
+				font-weight: 700;
+				text-align: center;
+				font-size: 14px;
+				text-transform: uppercase;
+				}
+				main > #cover > article > a{
+					padding:7px 25px;
+					border:3px solid white;
+					min-width: 150px;
+					color:white;
+					font-size: 15px;
+					text-transform: uppercase;
+					text-decoration: none;
+					background-color: rgba(255, 255, 255, 0);
+					transition:color 0.2s ease-in-out, border 0.2s ease-in-out;
+					}
+					main > #cover > article > a:nth-child(2){
+						margin-left: 50px;
+					}
+					main > #cover > article > a:hover{
+						background-color: rgba(119, 175, 156, 0.8);
+						border:3px solid #77AF9C;
+					}
+			main > #cover > div > p{
+				margin:0 auto;
+				display:inline;
+				font-family: 'Work Sans', Helvetica, Calibri, Arial, sans-serif;
+				font-weight: 700;
+				text-align: center;
+				font-size: 14px;
+				text-transform: uppercase;
+				}
+				main > #cover > div > p > span{
+					color:#8CD790;
+				}
+		main > #cover > a{
+			position:absolute;
+			bottom:100px;
+			left:50%;
+			transform:translateX(-50%);
+			padding:7px 25px;
+			border:3px solid white;
+			color:white;
+			font-size: 15px;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition:color 0.2s ease-in-out, border 0.2s ease-in-out;
+			}
+			main > #cover > a:hover{
+				border:3px solid #77AF9C;
+				color:#77AF9C;
+			}
+	main > #about-snip{
+		min-height: 400px;
+		width:100%;
+		background-color: #285943;
+		color:white;
+		float:left;
+		padding:60px 200px;
+		text-align: center;
+		}
+		main > #about-snip > h1{
+			font-size: 34px;
+			margin-bottom: 70px;
+		}
+		main > #about-snip > h2{
+			font-size: 34px;
+			margin-bottom: 20px;
+		}
+		main > #about-snip > div > h3, main > #about-snip > article > div > h3{
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+		main > #about-snip > article {
+			width:100%;
+			display: flex;
+			justify-content:center;
+			align-items:stretch;	
+			}
+			main > #about-snip > article > div{
+				width:50%;
+				margin-bottom: 30px;
+				text-align: left;
+				font-size: 14px;
+				}
+				main > #about-snip > article > div > ul{
+					padding-left: 15px;
+				}
+		main > #about-snip > div{
+			font-size: 14px;
+			width:100%;
+			text-align: left;
+			}
+			main > #about-snip > div > p{
+				text-align: justify;
+				line-height: 1.5;
+				text-indent: 25px;
+			}
+		main > #about-snip > a{
+			text-decoration: none;
+			font-size: 16px;
+			display:inline;
+			color:white;
+			padding:7px 25px;
+			border:3px solid transparent;
+			transition:color 0.2s ease-in-out, border 0.2s ease-in-out;
+			}
+			main > #about-snip > a:hover{
+				color:#77AF9C;
+				border:3px solid #77AF9C;
+			}
+	main > #twitter-feed{
+		width:100%;
+		min-height: 400px;
+		background-color: #285943;
+		color:white;
+		float:left;
+		padding:80px 200px;
+		}
+		main > #twitter-feed > h1{
+			font-size: 34px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		main > #twitter-feed > p{
+			width:100%;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		main > #twitter-feed > form{
+			margin:0 auto;
+			display:block;
+			width:650px;
+			}
+			main > #twitter-feed > form > input[type="text"]{
+				padding:10px;
+				width:100%;
+				display:block;
+				margin:0 auto;
+			}
+			main > #twitter-feed > form > input[type="submit"]{
+				padding:10px 25px;
+				margin-top:10px;
+				display: block;
+			}
+		main > #twitter-feed > div > div{
+			width:47.5%;
+			display:block;
+			height:200px;
+			padding:20px;
+			float:left;
+			margin-bottom: 20px;
+			background-color: white;
+			border:1px solid rgba(0, 0, 0, 0.5);
+			border-radius: 5px;
+			}
+			main > #twitter-feed > div > div:nth-child(even){
+				margin-left: 5%;
+			}
+
+			main > #twitter-feed > div > div > div{
+				display:block;
+			}
+			main > #twitter-feed > div > div > div > img{
+				border-radius: 50%;
+				display:inline;
+				margin-right: 10px;
+				float:left;
+			}
+			main > #twitter-feed > div > div > div > div{
+				display:inline;
+				float:left;
+				}
+				main > #twitter-feed > div > div > div > div > h2{
+					font-size: 18px;
+					color:black;
+				}
+				main > #twitter-feed > div > div > div > div > h3{
+					font-size: 12px;
+					color:rgba(250, 250, 250, 1);
+					font-weight: normal;
+					color:black;
+				}
+			main > #twitter-feed > div > div > p{
+				width:100%;
+				float:left;
+				display:block;
+				margin-top: 20px;
+				color:black;
+			}
+		main > #about-snip > a{
+			text-decoration: none;
+			font-size: 16px;
+			display:inline;
+			color:white;
+			padding:7px 25px;
+			border:3px solid transparent;
+			transition:color 0.2s ease-in-out, border 0.2s ease-in-out;
+			}
+			main > #about-snip > a:hover{
+				color:#77AF9C;
+				border:3px solid #77AF9C;
+			}
+	main > #home-blocks{
+		float:left;
+		padding:50px 0;
+		width:100%;
+		}
+		main > #home-blocks > article{
+			float:left;
+			padding:50px 150px;
+			width:100%;
+			}
+			main > #home-blocks > article > a{
+				position: relative;
+				display:block;
+				float:left;
+				width:45%;
+				height:500px;
+				padding:30px;
+				margin-bottom: 25px;
+				background-color: rgba(75, 75, 75, 0.6);
+				transition: all 0.2s ease-in-out;
+				-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+				-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+				box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+				}
+				main > #home-blocks > article > a:nth-child(even){
+					float:right;
+				}
+				main > #home-blocks > article > a:hover{
+					background-color: rgba(75, 75, 75, 0.7);	
+				}
+				main > #home-blocks > article > a:before{
+					content: "";
+					background-image: url("../img/tumblr_inline_ntpbmrjRJd1svf09g_1280.jpg");
+					background-repeat:no-repeat;
+					background-position: center center;
+					background-size: 190%;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					position: absolute;
+					z-index: -1;
+					transition: all 0.2s ease-in-out;
+					}
+					main > #home-blocks > article > a:nth-child(2):before{
+						background-image: url("../img/pexels-photo-247135.jpeg");
+					}
+					main > #home-blocks > article a:nth-child(3):before{
+						background-image: url("../img/Tomorrowland-Festival-2014-Belgium-Weekend-2.jpg");
+					}
+					main > #home-blocks > article a:nth-child(4):before{
+						background-image: url("../img/livecrowd.jpg");
+					}
+					main > #home-blocks > article > a:hover:before{
+						background-size: 200%;
+					}
+				main > #home-blocks > article > a > div{
+					position:absolute;
+					bottom:25px;
+					text-decoration: none;
+					text-transform: uppercase;
+					color:white;
+					}
+					main > #home-blocks > article > a > div > p:nth-child(odd){
+						font-size: 16px;
+						}
+						main > #home-blocks > article > a > div > p > span{
+							width:0px;
+							vertical-align: middle;
+							display:inline-block;
+							border-top: 1px solid transparent;
+							border-top: 1px solid white;
+							opacity:0;
+							transition: width 0.2s ease-in-out, opacity 0.2s ease-in-out;
+						}
+						main > #home-blocks > article > a:hover > div > p:nth-child(odd) > span{
+							width:25px;
+							opacity:1;	
+							margin-right: 10px;
+						}
+					main > #home-blocks > article > a > div > p:nth-child(even){
+						font-size: 27px;
+					}
+	main > #search-blocks{
+		float:left;
+		margin-top: 50px;
+		padding:50px 150px;
+		width:100%;
+		}
+		main > #search-blocks > h1{
+			float:left;
+			margin-left: 2.5%;
+			font-size: 36px;
+			width:100%;
+		}
+		main > #search-blocks > article{
+			float:left;
+			margin-top: 50px;
+			}
+			main > #search-blocks > article > a{
+				float:left;
+				width:20%;
+				min-height:150px;
+				text-decoration: none;
+				color:black;
+				background-color: white;
+				margin-left: 2.5%;
+				margin-bottom: 50px;
+				}
+				main > #search-blocks > article > a:nth-child(4n){
+					margin-right: 0;
+				}
+				main > #search-blocks > article > a > img{
+					float:left;
+					width:100%;
+					max-height:;
+					margin-bottom: 20px;
+				}
+				main > #search-blocks > article > a > div{
+					padding: 15px;
+					}
+					main > #search-blocks > article > a > div > h2{
+						margin-bottom: 15px;
+					}
+					main > #search-blocks > article > a > div > h3{
+						font-size: 14px;
+						font-weight: 400;
+						max-height: 150px;
+						white-space: none;
+						overflow: hidden;
+						text-overflow: ellipsis;
+					}
+					main > #search-blocks > article > a > div > p{
+						width:100%;
+						margin-top: 100px;
+						padding:10px 20px;
+						font-size: 14px;
+						color:white;
+						background-color: #77AF9C;
+					}
+					main > #search-blocks > article > a:hover > div > p{
+						background-color: #285943;
+					}
+	main > #gigs{
+		float:left;
+		width:100%;
+		}
+		main > #gigs > article{
+			width:35%;
+			float:left;
+			padding:50px 10px;
+			}
+			main > #gigs > article:nth-child(2){
+				width:65%;
+				padding:0;
+			}
+			main > #gigs > article > #googleMap{
+				width:100%;
+				height:600px;
+			}
+			main > #gigs > article > p{
+				font-size: 20px;
+				text-align: center;
+				color:rgba(0, 0, 0, 0.5);
+				margin-bottom: 15px;
+			}
+			main > #gigs > article > h1{
+				text-align: center;
+				font-size: 36px;
+			}
+			main > #gigs > article > ul{
+				text-align: center;
+				list-style: none;
+				}
+				main > #gigs > article > ul > li{
+					margin-bottom: 20px;
+					}
+					main > #gigs > article > ul > li > p{
+						font-size: 18px;
+						}
+						main > #gigs > article > ul > li > p:nth-child(2){
+							font-size: 16px;
+							color:rgba(0, 0, 0, 0.5);
+						}
+	main > #article {
+		float:left;
+		}
+		main > #article > #quick{
+			float:left;
+			display:block;
+			width:100%;
+			background-color: #285943;
+			text-align: center;
+			}
+			#quick > ul{
+				list-style: none;
+				display: inline-block;
+				}
+				#quick > ul > li{
+					display:inline-block;
+					float:left;
+					}
+					#quick > ul > li > a{
+						float:left;
+						display:block;
+						padding:20px 20px;
+						color:white;
+						text-decoration: none;
+						background-color: transparent;
+						}
+						#quick > ul > li > a:hover, #quick > ul > li > .open{
+							background-color: #8CD790;
+						}
+		main > #article > #essay{
+			padding:0 150px;
+			width:100%;
+			float:left;
+			}
+			main > #article > #essay > article{
+				float:left;
+				padding: 60px 0;
+				display:none;
+				width:100%;
+				}
+				main > #article > #essay > #home{
+					display:block;
+				}
+				main > #article > #essay > article > h1{
+					font-size: 40px;
+					color:#285943;
+					margin-bottom: 25px;
+				}
+				main > #article > #essay > article > p{
+					font-size: 16px;
+					line-height: 1.5;
+					text-indent: 25px;
+					color:black;
+					margin-bottom: 15px;
+				}
+				main > #article > #essay > article > ul{
+					margin-left: 30px;
+					}
+					main > #article > #essay > article > ul > li{
+						margin-bottom: 15px;
+					}
+				main > #article > #essay > article > h4{
+					text-align: center;
+					margin:50px auto 0;
+					}
+					main > #article > #essay > article > h4 > span{
+						padding-top: 10px;
+						border-top: 1px solid #285943;
+					}
+					main > #article > #essay > article > h4 > span > a{
+						color:#285943;
+						text-decoration: none;
+						}
+						main > #article > #essay > article > h4 > span > a:hover{
+							color:#8CD790;
+						}			
+footer{
+	float:left;
+	width:100%;
+	}
+	footer > div{
+		width:100%;
+		float:left;
+		padding:0 130px;
+	}
+	footer > div:nth-child(1){
+		background-color: rgba(0, 0, 0, 0.8);
+		}
+		footer > div:nth-child(1) > ul{
+			list-style: none;
+			width:calc((100% / 4));
+			padding:50px 60px;
+			display:inline;
+			float:left;
+			color:#B4B4B4;
+			}
+			footer > div:nth-child(1) > ul > p{
+				margin-bottom: 20px;
+				font-size: 14px;
+				font-family: 'Work Sans SemiBold', Helvetica, Calibri, arial, sans-serif;
+				font-weight: 700;
+				color:#77AF9C;
+			}
+			footer > div:nth-child(1) > ul > li{
+				padding:3px 0;
+				font-size: 14px;
+				}
+				footer > div:nth-child(1) > ul > li > a {
+					text-decoration: none;
+					color:#B4B4B4;
+					font-size: 14px;
+					}
+					footer > div:nth-child(1) > ul > li > a:hover{
+						color:#77AF9C;
+					}
+	footer > div:nth-child(2){
+		background-color: #000000;
+		height:60px;
+		padding:0 160px;
+		}
+		footer > div:nth-child(2) > p{
+			color:white;
+			opacity:0.5;
+			display:inline;
+			line-height: 60px;
+			font-size: 16px;
+		}
+		footer > div:nth-child(2) > ul{
+			list-style: none;
+			float:right;
+			}
+			footer > div:nth-child(2) > ul > li{
+				padding:18px 15px;
+				float: left;
+				}
+				footer > div:nth-child(2) > ul > li > a{
+					float:left;
+					}
+					footer > div:nth-child(2) > ul > li > a > img{
+						height:24px;
+						opacity:0.5;
+						transition: opacity 0.2s ease-in-out;
+					}
+					footer > div:nth-child(2) > ul > li > a > img:hover{
+						opacity:1;
+					}
